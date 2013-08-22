@@ -1,0 +1,21 @@
+<?php
+
+/**
+ * @file
+ * Module file for the Commerce QuickBooks Online module.
+ */
+
+/**
+ * Implements hook_menu().
+ */
+function commerce_qbo_menu() {
+  $items['admin/commerce/config/qbo'] = array(
+    'title' => 'QuickBooks Online',
+    'page callback' => 'commerce_qbo_admin_config',
+    'access arguments' => array('administer qbo'),
+    'type' => MENU_CALLBACK,
+    'file' => 'commerce_qbo.admin.inc',
+  );
+
+  return $items;
+}
