@@ -1,1 +1,1 @@
-Please check out a versioned branch, such as 7.x-1.x.
+Commerce QuickBooks Online connects your Drupal Commerce installation to your QuickBooks Online account, automatically synchronizing data between the two.
