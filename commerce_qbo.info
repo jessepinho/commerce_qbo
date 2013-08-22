@@ -1,0 +1,7 @@
+name = QuickBooks Online
+description = Synchronize data between Drupal Commerce and QuickBooks Online.
+package = Commerce (contrib)
+dependencies[] = commerce
+dependencies[] = commerce_line_item
+dependencies[] = commerce_order
+core = 7.x
