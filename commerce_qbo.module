@@ -19,3 +19,14 @@ function commerce_qbo_menu() {
 
   return $items;
 }
+
+/**
+ * Implements hook_permission().
+ */
+function commerce_qbo_permission() {
+  return array(
+    'administer qbo' => array(
+      'title' => t('Administer Commerce QuickBooks Online'),
+    ),
+  );
+}
