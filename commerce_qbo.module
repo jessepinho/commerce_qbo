@@ -13,7 +13,21 @@ function commerce_qbo_menu() {
     'title' => 'QuickBooks Online',
     'page callback' => 'commerce_qbo_admin_config',
     'access arguments' => array('administer qbo'),
+    'type' => MENU_NORMAL_ITEM,
+    'file' => 'commerce_qbo.admin.inc',
+  );
+  $items['admin/commerce/config/qbo/menu_proxy'] = array(
+    'title' => 'Menu proxy',
+    'page callback' => 'commerce_qbo_menu_proxy',
+    'access arguments' => array('administer qbo'),
     'type' => MENU_CALLBACK,
+    'file' => 'commerce_qbo.admin.inc',
+  );
+  $items['admin/commerce/config/qbo/connect'] = array(
+    'title' => 'Connect to QuickBooks Online',
+    'page callback' => 'commerce_qbo_connect',
+    'access arguments' => array('administer qbo'),
+    'type' => MENU_NORMAL_ITEM,
     'file' => 'commerce_qbo.admin.inc',
   );
 
